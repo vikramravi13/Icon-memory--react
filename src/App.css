@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding-left: 0;
+  
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #e5daba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{  
+  background-color: #e5daba;
+
+}
+h1{
+  text-align: center;
+  margin-bottom: 1em;
+}
+p{text-align: center;
+  padding: 2%;
+}
+
+.card-container{
+ justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap:1rem;
+
+}
+.card{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* transform: rotateY(180deg); */
+  /* animation: 2s hideCard linear; */
+  /* transition: transform 0.5s; */
+  width: 80px;
+  height: 80px;
+}
+/* @keyframes hideCard{
+  0%, 70%{
+    transform: rotateY(0);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
+} */
+.card img{
+  max-width: 80%;
+  max-height: 80%;
+  /* transition: transform 0.5s; */
+  /* transform: rotateY(180deg); */
+  /* transform: scale(0); */
+  /* animation: 2s hideImage linear; */
+}
+/* @keyframes hideImage{
+  0%, 70%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+} */
+.back-card{
+  background: rgb(47, 47, 99);
+  transform: rotateY( 180deg);
+}
+.front-card{
+  /* background:  #fff; */
+  align-items: center;
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
